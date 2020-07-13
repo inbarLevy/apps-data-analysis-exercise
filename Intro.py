@@ -3,14 +3,14 @@ import dateparser
 
 try:
     # change
-    user_reviews = pd.read_csv('../DataFiles/reviews.csv')
+    user_reviews = pd.read_csv('./DataFiles/reviews.csv')
     review_num_of_rows = user_reviews.shape[0]
 except:
     print('Error while handling user_reviews file.')
 
 try:
     # change
-    apps = pd.read_csv('../DataFiles/appsmini.csv', parse_dates=["Last Updated"], date_parser=lambda x: dateparser.parse(x))
+    apps = pd.read_csv('./DataFiles/apps.csv', parse_dates=["Last Updated"], date_parser=lambda x: dateparser.parse(x))
     apps_num_of_rows = apps.shape[0]
 except:
     print('Error while handling apps file.')

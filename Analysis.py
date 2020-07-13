@@ -1,4 +1,4 @@
-from DataAnalysis import Intro
+import Intro
 import re
 import pandas as pd
 

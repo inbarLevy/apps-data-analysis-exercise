@@ -1,4 +1,4 @@
-from DataAnalysis import Intro
+import Intro
 import numpy as np
 import pandas as pd
 
