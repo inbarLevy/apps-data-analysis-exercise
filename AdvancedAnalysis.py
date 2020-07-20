@@ -31,12 +31,8 @@ print('\nThe average polarity of free apps is {}'.format(z['Sentiment_Polarity']
 
 
 def get_average_polarity(app_name):
-    try:
         return user_reviews[user_reviews['App'] == app_name].groupby('App')['Sentiment_Polarity'].aggregate(
             np.mean).values
-    except:
-        print('Error while handling' + app_name)
-        return
 
 
 def get_sentiment(app_name):
